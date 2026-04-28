@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && npx vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -23,7 +23,7 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.14.2",
-    "recharts": "^3.8.1"
+    "recharts": "^3.8.1",`n    "vite": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -44,4 +44,5 @@
     "vite": "^6.0.0"
   }
 }
+
 
