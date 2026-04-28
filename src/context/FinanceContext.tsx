@@ -1,4 +1,4 @@
-﻿import {
+import {
   createContext,
   useContext,
   useEffect,
@@ -118,15 +118,15 @@ export const FinanceProvider = ({ children }: { children: ReactNode }) => {
 
     // Real-time subscriptions
     const expensesSub = supabase.channel('expenses-changes')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'expenses', filter: space_id=eq. }, () => fetchData())
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'expenses', filter: `space_id=eq.${spaceId}` }, () => fetchData())
       .subscribe()
 
     const contributionsSub = supabase.channel('contributions-changes')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'contributions', filter: space_id=eq. }, () => fetchData())
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'contributions', filter: `space_id=eq.${spaceId}` }, () => fetchData())
       .subscribe()
 
     const categoriesSub = supabase.channel('categories-changes')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'categories', filter: space_id=eq. }, () => fetchData())
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'categories', filter: `space_id=eq.${spaceId}` }, () => fetchData())
       .subscribe()
 
     return () => {
