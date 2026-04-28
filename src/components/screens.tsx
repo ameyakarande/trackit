@@ -385,7 +385,7 @@ export const OverviewScreen = ({
                   <div>
                     <p className="text-sm font-medium text-zinc-950">{expense.title}</p>
                     <p className="mt-1 text-xs text-zinc-400">
-                      {category?.name ?? 'Misc'} • {user?.name ?? 'Unknown'} • {expense.date}
+                      {category?.name ?? 'Misc'} â€¢ {user?.name ?? 'Unknown'} â€¢ {expense.date}
                     </p>
                   </div>
                   <div className="text-sm font-semibold text-zinc-950">{formatCurrency(expense.amount)}</div>

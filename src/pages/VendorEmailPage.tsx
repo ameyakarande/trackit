@@ -461,7 +461,7 @@ export default function VendorEmailPage({
                                 <div key={draft.id} className="email-sidebar-item">
                                     <button type="button" className="email-sidebar-main" onClick={() => loadDraft(draft)}>
                                         <strong>{draft.subject || draft.name}</strong>
-                                        <span>{draft.toVendorEmails.length} vendor{draft.toVendorEmails.length === 1 ? '' : 's'} · {draft.status}</span>
+                                        <span>{draft.toVendorEmails.length} vendor{draft.toVendorEmails.length === 1 ? '' : 's'} Â· {draft.status}</span>
                                     </button>
                                     <button type="button" className="email-icon-button" onClick={() => deleteDraft(draft.id)} title="Delete draft">
                                         <Trash2 size={14} />
@@ -583,7 +583,7 @@ export default function VendorEmailPage({
                                 {composer.attachments.map(file => (
                                     <div key={file.id} className="email-attachment-chip">
                                         <span>{file.fileName}</span>
-                                        <button type="button" onClick={() => setComposer(prev => ({ ...prev, attachments: prev.attachments.filter(item => item.id !== file.id) }))}>×</button>
+                                        <button type="button" onClick={() => setComposer(prev => ({ ...prev, attachments: prev.attachments.filter(item => item.id !== file.id) }))}>Ã—</button>
                                     </div>
                                 ))}
                             </div>
