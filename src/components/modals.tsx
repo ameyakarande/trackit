@@ -1,4 +1,4 @@
-﻿import { useEffect, useState, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { CalendarDays, Download, Plus, Trash2, Users, X } from 'lucide-react'
 
 import { TONE_STYLES } from '../constants'
@@ -91,7 +91,7 @@ export const ExpenseModal = ({
   const [amount, setAmount] = useState(expense?.amount.toString() ?? '')
   const [categoryId, setCategoryId] = useState(expense?.categoryId ?? categories[0]?.id ?? '')
   const [paidBy, setPaidBy] = useState(expense?.paidBy ?? users[0]?.id ?? '')
-  const [date, setDate] = useState(expense?.date ?? ${defaultMonth}-01)
+  const [date, setDate] = useState(expense?.date ?? `${defaultMonth}-01`)
   const [loading, setLoading] = useState(false)
 
   const handleSave = async () => {
@@ -417,7 +417,7 @@ export const WorkspaceManagerModal = ({
               <div>
                 <div className="text-sm font-semibold">{space.name}</div>
                 <div className={cn('text-xs', currentSpaceId === space.id ? 'text-zinc-300' : 'text-zinc-400')}>
-                  {space.mode === 'group' ? Shared workspace : 'Personal tracker'}
+                  {space.mode === 'group' ? 'Shared workspace' : 'Personal tracker'}
                 </div>
               </div>
               <div className={cn('rounded-full px-3 py-1 text-xs font-medium', currentSpaceId === space.id ? 'bg-white text-zinc-900' : 'bg-zinc-100 text-zinc-600')}>
@@ -538,8 +538,8 @@ export const ReportModal = ({
             onClick={() =>
               setFilter({
                 mode: 'range',
-                startDate: ${month}-01,
-                endDate: ${month}-28,
+                startDate: `${month}-01`,
+                endDate: `${month}-28`,
               })
             }
             className={cn(
