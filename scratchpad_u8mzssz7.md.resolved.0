@@ -1,8 +1,0 @@
-# Task: Verify "Download PO" functionality
-
-- [x] Confirm http://localhost:3001/ is open.
-- [x] Find the 'PO Issued' quotation.
-- [ ] Click 'View' to enter the detail view.
-- [ ] Verify the 'Download PO' button is present in the action bar.
-- [ ] Click it and verify it logs 'PDF saved successfully!' in the console.
-- [ ] Capture a screenshot of the detail view with the button.

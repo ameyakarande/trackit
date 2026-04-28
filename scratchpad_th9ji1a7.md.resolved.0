@@ -1,7 +1,0 @@
-# Tasks Checklist
-- [ ] Confirm app is at http://localhost:3001
-- [ ] Find an 'issued PO' with a 'Download PO' button
-- [ ] Open console and click the button
-- [ ] Check console for 'Generating PO PDF for:'
-- [ ] Check if `window.jspdf` or `jsPDF` is available globally
-- [ ] Report findings
