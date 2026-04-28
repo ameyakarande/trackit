@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -23,7 +23,9 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.14.2",
-    "recharts": "^3.8.1",`n    "vite": "^6.0.0",`n    "typescript": "^5.7.0"
+    "recharts": "^3.8.1",
+    "vite": "^6.0.0",
+    "typescript": "^5.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -39,14 +41,6 @@
     "globals": "^17.5.0",
     "postcss": "^8.5.12",
     "tailwindcss": "^4.2.4",
-    "typescript": "~5.7.0",
-    "typescript-eslint": "^8.58.2",
-    "vite": "^6.0.0",`n    "typescript": "^5.7.0"
+    "typescript-eslint": "^8.58.2"
   }
 }
-
-
-
-
-
-
