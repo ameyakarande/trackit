@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { ArrowRight, LockKeyhole, Mail, UserRound } from 'lucide-react'
 
 import { MAX_USERS } from '../constants'
@@ -59,7 +59,7 @@ export const AuthScreen = () => {
                   setMode('signup')
                   setMessage('')
                 }}
-                className={lex-1 rounded-full px-4 py-2 text-sm font-medium transition }
+                className={`flex-1 rounded-full px-4 py-2 text-sm font-medium transition ${mode === "signup" ? "bg-white text-zinc-950 shadow-sm" : "text-zinc-500 hover:text-zinc-700"}`}
               >
                 Sign up
               </button>
@@ -70,7 +70,7 @@ export const AuthScreen = () => {
                   setMode('login')
                   setMessage('')
                 }}
-                className={lex-1 rounded-full px-4 py-2 text-sm font-medium transition }
+                className={`flex-1 rounded-full px-4 py-2 text-sm font-medium transition ${mode === "signup" ? "bg-white text-zinc-950 shadow-sm" : "text-zinc-500 hover:text-zinc-700"}`}
               >
                 Login
               </button>
