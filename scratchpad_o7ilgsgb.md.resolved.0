@@ -1,0 +1,10 @@
+# Task Checklist
+- [ ] Go to http://localhost:3001/
+- [ ] Log in as 'admin' / 'admin123'
+- [ ] Find an 'Approved' quotation
+- [ ] Click 'Create PO' for that quotation
+- [ ] Verify 'PO Issued' status badge in header
+- [ ] Take screenshot of the updated header
+- [ ] Go back to quotation list
+- [ ] Verify 'PO Issued' status badge in grouped RFQ header
+- [ ] Take screenshot of the grouped list view

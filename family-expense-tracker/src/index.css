@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Geist Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+}
+
+html {
+  font-family: 'Geist Sans', 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #eceae8 0%, #e5e2df 100%);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: #18181b;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.65), transparent 25%),
+    linear-gradient(180deg, #eceae8 0%, #e5e2df 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(34, 197, 94, 0.18);
+  color: #111827;
+}

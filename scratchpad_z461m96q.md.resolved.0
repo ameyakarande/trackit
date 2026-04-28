@@ -1,0 +1,8 @@
+# Task Checklist
+- [ ] Navigate to http://localhost:5173/ and log in (admin/admin123)
+- [ ] Check for the logo in the top navigation bar
+- [ ] Find an 'Approved' quotation or approve a 'Submitted' one
+- [ ] Verify 'Create PO' button in the quotation entry/view page
+- [ ] Capture dashboard screenshot
+- [ ] Capture quotation entry page screenshot
+- [ ] Check console for errors
