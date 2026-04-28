@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { ArrowRight, HousePlus, Users } from 'lucide-react'
 
 import { MAX_USERS } from '../constants'
@@ -64,7 +64,11 @@ export const FamilySetupScreen = () => {
                   setMode('individual')
                   setMessage('')
                 }}
-                className={ounded-[20px] px-3 py-2 text-sm font-medium transition }
+                className={`rounded-[20px] px-3 py-2 text-sm font-medium transition ${
+                  mode === 'individual'
+                    ? 'bg-white text-zinc-950 shadow-sm'
+                    : 'text-zinc-500 hover:text-zinc-700'
+                }`}
               >
                 Personal
               </button>
@@ -75,7 +79,11 @@ export const FamilySetupScreen = () => {
                   setMode('group')
                   setMessage('')
                 }}
-                className={ounded-[20px] px-3 py-2 text-sm font-medium transition }
+                className={`rounded-[20px] px-3 py-2 text-sm font-medium transition ${
+                  mode === 'group'
+                    ? 'bg-white text-zinc-950 shadow-sm'
+                    : 'text-zinc-500 hover:text-zinc-700'
+                }`}
               >
                 Group
               </button>
@@ -86,7 +94,11 @@ export const FamilySetupScreen = () => {
                   setMode('join')
                   setMessage('')
                 }}
-                className={ounded-[20px] px-3 py-2 text-sm font-medium transition }
+                className={`rounded-[20px] px-3 py-2 text-sm font-medium transition ${
+                  mode === 'join'
+                    ? 'bg-white text-zinc-950 shadow-sm'
+                    : 'text-zinc-500 hover:text-zinc-700'
+                }`}
               >
                 Join
               </button>
